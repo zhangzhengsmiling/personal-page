@@ -8,7 +8,7 @@ import StyleContext from 'isomorphic-style-loader/StyleContext';
 // import RequestContext from '../common/context/request-context';
 
 const insertCss = () => {}
-ReactDom.hydrate(
+ReactDom.render(
     <StyleContext.Provider value={{ insertCss }}>
       <Provider store={store}>
         <Router>
