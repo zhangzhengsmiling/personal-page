@@ -9,6 +9,9 @@
     "dev:build:client": "webpack --config ./config/webpack.client.js --watch",
     "dev:build:server": "webpack --config ./config/webpack.server.js --watch",
     "dev:start": "nodemon --watch build --exec node \"./build/bundle.js\"",
+    "build": "run-p -s build:**",
+    "build:client": "webpack --config ./config/webpack.client.js",
+    "build:server": "webpack --config ./config/webpack.server.js",
     "changelog": "rm ./CHANGELOG.md && conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "keywords": [],

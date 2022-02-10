@@ -2,13 +2,16 @@ import React from 'react';
 import withStyles from 'isomorphic-style-loader/withStyles';
 import appStyle from './style';
 import compose from '../../utils/compose';
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, Redirect } from 'react-router'
 import Home from '../Home';
 
 const App = () => {
   return (
     <div>
-      <Route path="/home" component={Home} />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/home" component={Home} />
+      </Switch>
     </div>
   )
 }

@@ -43,7 +43,7 @@ const port = config[CONFIG_SERVER_KEY].PORT;
    const content = renderToString(
       <StyleContext.Provider value={{ insertCss }}>
         <Provider store={store}>
-          <Router>
+          <Router location={location}>
             <App />
           </Router>
         </Provider>

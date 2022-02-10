@@ -26,12 +26,11 @@ const menus = [
 ];
 
 const links = [
-  { icon: 'icon-github-fill', link: '#' },
-  { icon: 'icon-youxiang', link: '#' }
+  { icon: 'icon-github-fill', link: 'https://github.com/zhangzhengsmiling' },
+  { icon: 'icon-blog', link: 'https://zhangzhengsmiling.github.io' }
 ];
 const avatar = 'https://avatars.githubusercontent.com/u/40157660?v=4';
 const background = 'http://h2.ioliu.cn/bing/Aoraki_ZH-CN7776353328_1920x1080.jpg?imageslim'
-
 
 const Home = () => {
   return (
