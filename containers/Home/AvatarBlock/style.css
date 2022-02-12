@@ -19,25 +19,9 @@
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
-  transform: translate(58px, 0) rotate(30deg);
-  transform-origin: -58px 0;
-  animation: round 2s infinite linear;
   border-radius: 50%;
 }
-.dot2 {
-  width: 2px;
-  height: 2px;
-  background: #fff;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-  transform: translate(64px, 0) rotate(30deg);
-  transform-origin: -64px 0;
-  animation: round 4s infinite ease-in-out reverse;
-  border-radius: 50%;
-}
+
 
 @keyframes round {
   0% {
