@@ -1,8 +1,9 @@
 const path = require('path');
 const rootDir = path.resolve(__dirname, '../');
+const TerserWebpackPlugin  = require('terser-webpack-plugin');
 
 const webpackConfigBase = {
-	mode:'development',
+	mode:'production',
 	resolve: {
 		extensions: ['.jsx', '.js', '.less', '.scss', '.sass', '.css', '.json'],
 		alias: {
@@ -26,7 +27,10 @@ const webpackConfigBase = {
 			loader:'ts-loader',
 			exclude: /node_modules/,
 		}]
-	}
+	},
+	optimization: {
+		minimizer: [new TerserWebpackPlugin()],
+	},
 }
 
 module.exports = webpackConfigBase;
