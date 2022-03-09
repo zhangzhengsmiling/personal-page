@@ -4,6 +4,7 @@ import appStyle from './style';
 import compose from '../../utils/compose';
 import { Route, Switch, Redirect } from 'react-router'
 import Home from '../Home';
+import Schdule from '../Schedule';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/home" component={Home} />
+        <Route path="/schedule" component={Schdule} />
       </Switch>
     </div>
   )
