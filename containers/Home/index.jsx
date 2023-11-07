@@ -7,6 +7,7 @@ import UserNameBlock from './UserNameBlock';
 import QuoteBlock from './QuoteBlock';
 import MenusBlock from './MenusBlock';
 import ReferenceLinksBlock from './ReferenceLinksBlock';
+import Filings from './Filings';
 
 const name = "zhangzhengsmiling";
 const quote = {
@@ -30,7 +31,7 @@ const links = [
   { icon: 'icon-blog', link: 'https://zhangzhengsmiling.github.io' }
 ];
 const avatar = 'https://avatars.githubusercontent.com/u/40157660?v=4';
-const background = 'http://h2.ioliu.cn/bing/Aoraki_ZH-CN7776353328_1920x1080.jpg?imageslim'
+const background = 'http://h2.ioliu.cn/bing/Aoraki_ZH-CN7776353328_1920x1080.jpg'
 
 const Home = () => {
   return (
@@ -46,6 +47,7 @@ const Home = () => {
           <ReferenceLinksBlock links={links} />
         </div>
       </div>
+      <Filings />
     </div>
   )
 }
