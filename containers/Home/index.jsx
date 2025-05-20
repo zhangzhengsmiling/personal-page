@@ -31,7 +31,7 @@ const links = [
   { icon: 'icon-blog', link: 'https://zhangzhengsmiling.github.io' }
 ];
 const avatar = 'https://avatars.githubusercontent.com/u/40157660?v=4';
-const background = 'http://h2.ioliu.cn/bing/Aoraki_ZH-CN7776353328_1920x1080.jpg'
+const background = 'https://bing.ee123.net/img/'
 
 const Home = () => {
   return (
